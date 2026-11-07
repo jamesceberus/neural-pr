@@ -1,0 +1,88 @@
+{
+  "scope": "Pilot agent-authored policy improvement under the ORIGINAL strict JSON worker",
+  "evaluation_id": "cdecee936db54e96860d94e86ae30d0f",
+  "model": {
+    "adapter": "meta-wonder-json-chat-v2",
+    "adapter_source_sha256": "70c2399bd895e84910d096fb68397700f71fa1be34b60d841fb85226b7729680",
+    "base_url": "https://api.meta.ai/v1",
+    "model": "muse-wonder-1.0",
+    "reasoning_effort": "low",
+    "temperature": 0.2
+  },
+  "original_controller_digest": "81b2556f806a6d8c9b7f8f510b6475881171351a864215d5c96c72ca71bfbfa8",
+  "incumbent": "ff43076cfa966003e945611829139657056e1a65e5d4e1733bc9287db0808c22",
+  "candidate": "75ce5b3dd14f539005135595da5508c5e0e9788b62ca70291b85c426d5425d20",
+  "policy_change": [
+    "For every coding-worker action, output exactly one strict JSON action object as the entire response, with no narrative, explanation, or markdown before or after it."
+  ],
+  "statistics": {
+    "candidate": {
+      "attempts": 6,
+      "json_rejections": 22,
+      "model_calls": 59,
+      "responses": 59,
+      "seconds": 102.27513887395617,
+      "successes": 6,
+      "tokens": 43402,
+      "tool_calls": 36
+    },
+    "incumbent": {
+      "attempts": 6,
+      "json_rejections": 39,
+      "model_calls": 60,
+      "responses": 60,
+      "seconds": 96.4815632099635,
+      "successes": 2,
+      "tokens": 40420,
+      "tool_calls": 21
+    }
+  },
+  "per_task": {
+    "client-errors": {
+      "candidate": 2,
+      "incumbent": 1
+    },
+    "fencing": {
+      "candidate": 2,
+      "incumbent": 1
+    },
+    "scope": {
+      "candidate": 2,
+      "incumbent": 0
+    }
+  },
+  "paired_transitions": {
+    "both_pass": 2,
+    "candidate_only": 4,
+    "incumbent_only": 0
+  },
+  "candidate_frozen_before_block_consultation": true,
+  "final_audit": "Unavailable; consumed original audit was excluded",
+  "current_parser_fix": "Subsequent human-authored engineering change; this result does not validate the policy under the repaired parser",
+  "subsequent_main_work_under_promoted_policy": "Not demonstrated",
+  "verification_checks": {
+    "active_pointer_matches_evaluation": true,
+    "all_rows_budget_compliant": true,
+    "application_canary_passed": true,
+    "audit_not_reused": true,
+    "correct_policy_on_every_row": true,
+    "distinct_policy_versions": true,
+    "evaluation_hash_valid": true,
+    "exact_parent": true,
+    "gate_recomputed_pass": true,
+    "gate_source_unchanged": true,
+    "identical_budgets": true,
+    "identical_model_and_environment": true,
+    "identical_row_environment": true,
+    "identical_starters": true,
+    "journal_hash_chain_valid": true,
+    "no_infrastructure_failures": true,
+    "only_skills_or_context_changed": true,
+    "original_controller_archive_matches": true,
+    "proposal_frozen_before_protected_work": true,
+    "source_development_evidence_bound": true,
+    "twelve_complete_rows": true
+  },
+  "evidence_type": "Sanitized recorded pilot summary; raw private journals and task fixtures are not distributed",
+  "raw_artifacts_included": false
+}

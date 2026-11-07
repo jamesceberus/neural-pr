@@ -1,0 +1,6 @@
+{
+  "provider": "Meta Model API",
+  "model": "muse-wonder-1.0",
+  "base_url": "https://api.meta.ai/v1",
+  "research_root": "research_runs/wonder-v2"
+}
